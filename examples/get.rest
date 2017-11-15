@@ -1,0 +1,9 @@
+http://localhost:8000
+-ks
+Content-Type: application/json; charset=utf-8
+--
+
+GET /api
+
+--
+GET /api-docs/swagger.yaml
