@@ -8,10 +8,10 @@ import my.org.myswagger.models.Message
 @Path("/api") // @Path annotation required for Swagger
 @Api(value = "/api")
 trait MessageService {
-  @Path("/stores/{storeNumber}/orders/{orderToken}")
+  @Path("/message")
   @ApiOperation(
     value = "get order service time for order token",
-    httpMethod = "POST",
+    httpMethod = "GET",
     produces = "Application/json"
   )
   @ApiResponses(

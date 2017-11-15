@@ -16,7 +16,7 @@ object ApiRoute
     with ErrorSupport {
 
   def apply: Route =
-    path(urlpath) {
+    path(urlpath / "message") {
       logRequest(urlpath) {
         handleErrors {
           cors(corsSettings) {
